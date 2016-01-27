@@ -1,8 +1,8 @@
 ---
-- hosts: all
+- hosts: local
   sudo: true
   vars_files:
-    - config/ansible/vars/all.yml
+    - vars/all.yml
   roles:
     - server
     - nginx

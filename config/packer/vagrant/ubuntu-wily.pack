@@ -177,6 +177,12 @@
       ]
     },
     {
+      "type": "ansible-local",
+      "playbook_file": "config/ansible/packer.yml",
+      "inventory_file": "config/ansible/inventories/local",
+      "group_vars": "config/ansible/vars"
+    },
+    {
       "environment_vars": [
         "HOME_DIR=/home/vagrant",
         "http_proxy={{user `http_proxy`}}",
@@ -196,10 +202,6 @@
         "config/packer/vagrant/scripts/common/minimize.sh"
       ],
       "type": "shell"
-    },
-    {
-      "type": "ansible-local",
-      "playbook_file": "config/ansible/packer.yml"
     }
   ],
   "variables": {
