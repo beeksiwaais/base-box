@@ -182,7 +182,7 @@
       "inventory_file": "config/ansible/inventories/local",
       "group_vars": "config/ansible/vars",
       "host_vars": "config/ansible/vars",
-      "role_paths": "config/ansible/roles"
+      "role_paths": "config/ansible"
     },
     {
       "environment_vars": [
