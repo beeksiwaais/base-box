@@ -2,7 +2,7 @@
 - hosts: local
   sudo: true
   vars_files:
-    - vars/all.yml
+    - /tmp/packer-provisioner-ansible-local/group_vars/all.yml
   roles:
     - server
     - nginx
