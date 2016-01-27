@@ -1,0 +1,5 @@
+- name: Install Prediction.IO
+  shell: bash -c "$(curl -s https://install.prediction.io/install.sh)"
+
+- name: Download "Sentiment Analysis" Engine Template
+  shell: pio template get whhone/template-sentiment-analysis /vagrant/prediction-engine
