@@ -177,6 +177,13 @@
       ]
     },
     {
+      "type": "shell",
+      "execute_command": "echo '{{user `ssh_pass`}}' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
+      "inline": [
+        "echo '%sudo    ALL=(ALL)  NOPASSWD:ALL' >> /etc/sudoers"
+      ]
+    },
+    {
       "type": "ansible-local",
       "playbook_file": "config/ansible/packer.yml",
       "inventory_file": "config/ansible/inventories/local",
@@ -186,13 +193,6 @@
         "config/ansible/roles/php",
         "config/ansible/roles/nginx",
         "config/ansible/roles/mysql"
-      ]
-    },
-    {
-      "type": "shell",
-      "execute_command": "echo '{{user `ssh_pass`}}' | {{ .Vars }} sudo -E -S sh '{{ .Path }}'",
-      "inline": [
-        "echo '%sudo    ALL=(ALL)  NOPASSWD:ALL' >> /etc/sudoers"
       ]
     },
     {
