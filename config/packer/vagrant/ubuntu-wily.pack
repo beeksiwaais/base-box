@@ -180,7 +180,9 @@
       "type": "ansible-local",
       "playbook_file": "config/ansible/packer.yml",
       "inventory_file": "config/ansible/inventories/local",
-      "group_vars": "config/ansible/vars"
+      "group_vars": "config/ansible/vars",
+      "hosts_vars": "config/ansible/vars",
+      "role_paths": "config/ansible/"
     },
     {
       "environment_vars": [
