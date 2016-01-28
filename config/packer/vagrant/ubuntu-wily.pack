@@ -210,7 +210,6 @@
         "config/packer/vagrant/scripts/ubuntu/sudoers.sh",
         "config/packer/vagrant/scripts/ubuntu/vagrant.sh",
         "config/packer/vagrant/scripts/common/vmtools.sh",
-        "config/packer/vagrant/scripts/ubuntu/cleanup.sh",
         "config/packer/vagrant/scripts/common/minimize.sh"
       ],
       "type": "shell"
