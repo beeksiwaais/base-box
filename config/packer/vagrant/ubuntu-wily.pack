@@ -205,7 +205,6 @@
       "execute_command": "echo 'vagrant' | {{.Vars}} sudo -S -E sh -eux '{{.Path}}'",
       "scripts": [
         "config/packer/vagrant/scripts/common/metadata.sh",
-        "config/packer/vagrant/scripts/ubuntu/update.sh",
         "config/packer/vagrant/scripts/common/sshd.sh",
         "config/packer/vagrant/scripts/ubuntu/networking.sh",
         "config/packer/vagrant/scripts/ubuntu/sudoers.sh",
