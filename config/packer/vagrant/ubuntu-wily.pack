@@ -158,6 +158,15 @@
     {
       "output": "builds/{{user `box_basename`}}.{{.Provider}}.box",
       "type": "vagrant"
+    },
+    {
+      "type": "atlas",
+      "token": "{{user `atlas_token`}}",
+      "artifact": "beeksiwaais/wily-devos",
+      "artifact_type": "vagrant.box",
+      "metadata": {
+        "created_at": "{{timestamp}}"
+      }
     }
   ],
   "provisioners": [
