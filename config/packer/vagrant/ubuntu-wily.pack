@@ -165,7 +165,8 @@
       "artifact": "beeksiwaais/wily-devos",
       "artifact_type": "vagrant.box",
       "metadata": {
-        "created_at": "{{timestamp}}"
+        "created_at": "{{timestamp}}",
+        "provider": "virtualbox"
       }
     }
   ],
