@@ -6,4 +6,5 @@
   roles:
     - vagrant_local
     - composer
+    - gearman
     - app

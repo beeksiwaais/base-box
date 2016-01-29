@@ -1,0 +1,3 @@
+- name: Install Gearman Job Server
+  sudo: yes
+  apt: pkg=gearman-job-server state=latest
