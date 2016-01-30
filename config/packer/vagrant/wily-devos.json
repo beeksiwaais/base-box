@@ -168,7 +168,8 @@
         "artifact_type": "vagrant.box",
         "metadata": {
           "created_at": "{{timestamp}}",
-          "provider": "virtualbox"
+          "provider": "virtualbox",
+          "version": "0.1.29"
         }
       },
       {
@@ -179,7 +180,8 @@
         "artifact_type": "vagrant.box",
         "metadata": {
           "created_at": "{{timestamp}}",
-          "provider": "vmware_desktop"
+          "provider": "vmware_desktop",
+          "version": "0.1.29"
         }
       },
       {
@@ -190,7 +192,8 @@
         "artifact_type": "vagrant.box",
         "metadata": {
           "created_at": "{{timestamp}}",
-          "provider": "vmware_fusion"
+          "provider": "vmware_fusion",
+          "version": "0.1.29"
         }
       },
       {
@@ -201,7 +204,8 @@
         "artifact_type": "vagrant.box",
         "metadata": {
           "created_at": "{{timestamp}}",
-          "provider": "libvirt"
+          "provider": "libvirt",
+          "version": "0.1.29"
         }
       }
     ]
