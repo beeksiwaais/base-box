@@ -162,12 +162,46 @@
       },
       {
         "type": "atlas",
+        "only": ["virtualbox-iso"],
         "token": "{{user `atlas_token`}}",
         "artifact": "beeksiwaais/wily-devos",
         "artifact_type": "vagrant.box",
         "metadata": {
           "created_at": "{{timestamp}}",
           "provider": "virtualbox"
+        }
+      },
+      {
+        "type": "atlas",
+        "only": ["vmware-iso"],
+        "token": "{{user `atlas_token`}}",
+        "artifact": "beeksiwaais/wily-devos",
+        "artifact_type": "vagrant.box",
+        "metadata": {
+          "created_at": "{{timestamp}}",
+          "provider": "vmware_desktop"
+        }
+      },
+      {
+        "type": "atlas",
+        "only": ["vmware-iso"],
+        "token": "{{user `atlas_token`}}",
+        "artifact": "beeksiwaais/wily-devos",
+        "artifact_type": "vagrant.box",
+        "metadata": {
+          "created_at": "{{timestamp}}",
+          "provider": "vmware_fusion"
+        }
+      },
+      {
+        "type": "atlas",
+        "only": ["qemu"],
+        "token": "{{user `atlas_token`}}",
+        "artifact": "beeksiwaais/wily-devos",
+        "artifact_type": "vagrant.box",
+        "metadata": {
+          "created_at": "{{timestamp}}",
+          "provider": "libvirt"
         }
       }
     ]
