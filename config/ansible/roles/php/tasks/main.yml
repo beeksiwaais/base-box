@@ -15,6 +15,10 @@
   sudo: yes
   apt: pkg=php5-fpm state=latest
 
+- name: Install php5-curl
+  sudo: yes
+  apt: pkg=php5-curl state=latest
+
 - name: Install PHP Packages
   sudo: yes
   apt: pkg={{ item }} state=latest

@@ -1,3 +1,7 @@
 - name: Install Gearman Job Server
   sudo: yes
   apt: pkg=gearman-job-server state=latest
+
+- name: Install Gearman PHP5
+  sudo: yes
+  apt: pkg=php5-gearman state=latest
